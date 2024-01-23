@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'noto_sans_monoregular';
+    src: url('./fonts/notosansmono-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('./fonts/notosansmono-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+img {
+    height: 40px;
+    width: auto;
+}
+
+html {
+    background-color: rgb(225,232,240);
+    font-family: 'noto_sans_monoregular';
+    font-size: 14px;
+}
+
+a:link , a:visited, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-shadow: 1px 1px 0 grey;
+    color: black;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 175px 1fr;
+    margin: 0;
+    height: 100vh;
+}
+
+.dashboard {
+    background-color: rgb(24,146,211);
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: auto;
+    padding: 20px;
+    color: white;
+    align-content: start;
+}
+
+.dashboard ul {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.dashboard ul li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dashboard li img {
+    height: 30px;
+    width: auto;
+    justify-self: center;
+}
+
+.dashboardTop {
+    margin-bottom: 50px;
+}
+
+.dashboard img {
+    height: 50px;
+}
+
+.dashboardTitle {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px
+}
+
+.header {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    padding: 20px 50px 10px;
+    gap: 10px;
+    box-shadow: 5px 2px 7px black;
+}
+
+.headerTop {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 30px;
+    align-items: center;
+}
+
+.headerTop img {
+    height: 25px;
+    width: auto
+}
+
+.headerTop input {
+    font-size: 20px;
+    background-color: rgb(225,232,240);
+    border-style: none;
+    border-radius: 10px;
+}
+
+.headerTop span {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#profilePic1{
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.headerBottom {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 30px;
+}
+
+.headerBottom img {
+    height: 70px;
+    border-radius: 50%;
+}
+
+.headerBottom span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.headerBottom span span {
+    font-size: 20px;
+}
+
+.headerBottom div {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+}
+
+.headerBottom button {
+    background-color: rgb(24,146,211);
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+}
+
+.headerBottom button:hover {
+    background-color: black;
+}
+
+.principalArea {
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-rows: 1fr;
+    padding: 30px;
+    gap: 30px;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    gap: 10px;
+}
+
+.cards {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    height: fit-content;
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 7px;
+    border-left: solid 10px orange;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 15px;
+    box-shadow: 0px 2px 3px black;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    gap: 5px
+}
+
+.buttons img {
+    height: 20px;
+    width: auto;
+}
+
+.cardTitle {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card span {
+    font-size: 14px;
+    color: grey;
+}
+
+.newsBar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.announcements, .trending {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px min(1fr, 700px);
+    gap: 10px;
+    font-size: 12px;
+}
+
+.principalArea h2 {
+    font-size: 20px;
+    margin: 0px;
+}
+
+.announcements div {
+    padding: 10px;
+    display: grid;
+    grid-row: repeat(3, 1fr);
+    color: grey;
+}
+
+.announcements div:nth-child(1), .announcements div:nth-child(2) {
+    border-bottom: solid 1px grey;
+}
+
+.announcements h3 {
+    margin: 0px;
+    color: black;
+}
+
+.announcements>div, .trending>div {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 7px black;
+}
+
+.trending {
+    margin-top: 30px;
+}
+
+.trending div {
+    display: grid;
+    grid-row: repeat(4, 1fr);
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.trending img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.info span {
+    font-size: 12px;
+    font-weight: normal;
+    color: grey;
+}
+
+.info div, .info span{
+    margin-left: 5px;
+}
